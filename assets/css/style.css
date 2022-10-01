@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Variables*/
+:root{
+    /*Fuentes*/
+    --fontmain: 'Margarine', cursive;
+    --fontsecondary: 'Varta', sans-serif;
+    /*Colores*/
+    --rosa: #FE709A;
+    --celeste: #6BB7E9;
+    --cremita: #F2DCBF;
+    --amarillo: #F0EC86;
+}
+/*Estilos generales*/
+.subtitulo{
+    font-family: var(--fontmain);
+}
+.subtitulo1{
+    font-family: var(--fontmain);
+    color: var(--rosa);
+}
+.subtitulo2{
+    font-family: var(--fontmain);
+    color: var(--celeste);
+}
+.subtitulo3{
+    font-family:var(--fontmain);
+    color: var(--cremita);
+}
+p, li{
+    font-family: 'Varta', sans-serif;
+    font-size: 1.2rem;
+}
+/*Menú de navegación*/
+.hero{
+    background: #F0EC86;
+}
+#navbarNav .nav-link{
+    color: var(--rosa);
+    font-family: var(--fontmain);
+    font-size: larger;
+}
+#navbarNav .nav-link:hover{
+    color: var(--celeste);
+    transition: 0.8s;
+}
+
+/*Encabezado*/
+.encabezado{
+    background-image: url( ../img/encabezado.jpg);
+    height: 450px;
+    background-size:cover;
+    background-attachment: fixed;
+    font-family: 'Margarine', cursive;
+    font-size: 1.8rem;
+}
+
+.encabezado h1{
+    padding-top: 200px;
+    padding-left: 25px;
+    opacity: .10;
+}
+
+/*Texto de bienvenida al sitio*/
+.texto-bienvenida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 200px;
+}
+
+.enlace-nosotros{
+    color: #6BB7E9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/*Artículos con enlaces a noticias*/
+.articulos-home{
+    height: auto;
+    background: #F0EC86;
+    padding-top: 30px;
+}
+
+.articulos-home__noticias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.articulos-home__noticias img{
+    width: 500px;
+    border-radius: 30px;
+    border: 2px solid #6BB7E9;
+    margin-top: 10px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+.btn-noticias{
+    border: 2px solid #6BB7E9;
+    border-radius: 30px;
+    background: #fff;
+    color: #6BB7E9;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: 'Margarine', cursive;
+    font-size: 1.3rem;
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+
+/*Inicio de estilos de la página "nosotros"*/
+
+.content-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding:50px 100px;
+}
+
+.nosotros-card{
+    background: #FE709A;
+    border: 3px solid #F2DCBF;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    padding: 50px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5)
+}
+
+.textos-card{
+    width: 75%;
+}
+.textos-card .subtitulo{
+    color: #F2DCBF;
+    padding-bottom: 20px;
+}
+
+.textos-card p{
+    color: #fff;
+}
+
+.img-card{
+    width: 250px;
+}
+.img-card img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+/*Inicio estilos página "colaborar"*/
+
+.colaborar-inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 200px;
+}
+
+.colaborar-inicio .subtitulo{
+    color: #6BB7E9;
+    padding-bottom: 20px;
+}
+
+.card-colaborar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100vw;
+}
+
+.estilo-card{
+    background: #F2DCBF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.estilo-card .subtitulo{
+    color: #6BB7E9;
+}
+
+.img-colaborar{
+    width: 250px;
+}
+
+.texto-colaborar{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.texto-colaborar .subtitulo{
+    padding-bottom: 20px;
+}
+
+.lista-mp li{
+    list-style: none;
+    font-family: 'Margarine', cursive;
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+
+.lista-mp a{
+    text-decoration: none;
+    color: #fff;
+    background:#6BB7E9;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Margarine', cursive;
+    font-size: 1.5rem;
+}
+
+/*Inicio estilod "adoptar"*/
+
+.textos-adoptar{
+    text-align: center;
+    margin: 25px 0 20px 0;
+}
+.textos-adoptar h2{
+    color: #FE709A;
+    padding-bottom: 15px;
+}
+
+.catalogo-adopcion{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contenedor-catalogo{
+    width: 30%;
+    height: 400px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.img-animales{
+    width: 100%;
+    height: 300px;
+}
+
+
+.img-animales img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+
+.overlay{
+    position: absolute;
+    background: rgba(240, 236, 134, .5);
+    bottom: 0;
+    left: 0%;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay a{
+    color: #FE709A;
+    font-family: 'Margarine', cursive;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.contenedor-catalogo:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+}
+
+/*Estilos "contacto"*/
+.textos-contacto{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.textos-contacto p{
+    padding-top: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 300px;
+    justify-content: center;
+    text-align: start;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Varta', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.input input, textarea{
+    background: #F2DCBF;
+    border-radius: 15px;
+    border-style: none;
+    margin: 5px 0;
+}
+
+.input input{
+    padding: 10px 0;
+}
+
+.btn-contacto button{
+    font-family: 'Varta', sans-serif;
+    font-size: 1rem;
+    border-radius: 10px;
+    border-style: none;
+    background: #F0EC86;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.btn-contacto button:hover{
+    cursor: pointer;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Footer*/
+.footer{
+    background: var(--amarillo);
+    height: auto;
+}
+.iconos-footer img{
+    width: 50px;
+    height: 50px;
+}
